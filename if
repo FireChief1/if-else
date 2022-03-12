@@ -1,0 +1,31 @@
+using System;
+
+namespace logic
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int time = DateTime.Now.Hour;
+
+            if (time >= 6 && time < 11)
+            {
+                Console.WriteLine("oooo günaydın");
+            }
+            else if (time <= 18)
+            {
+                Console.WriteLine("rastgele");
+            }
+            else
+            {
+                Console.WriteLine("iyi uyu he ");
+            }
+
+            string result = time <= 18 ? "iyiyiyiyi günler" : "good night";
+
+            result = time >= 6 && time < 11 ? "güneş doğmuş çoktan" : time <= 18 ? "İyi Günler !" : "İyi Geceler !";
+
+            Console.WriteLine(result);
+            
+
+
